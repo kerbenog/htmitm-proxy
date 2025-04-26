@@ -4,7 +4,7 @@ FROM ubuntu:20.04
 RUN apt-get update && apt-get install curl -y
 
 # Copy your daemon script & library into the container
-COPY cacert2.pem /cacert.pem
+COPY cacert.pem /cacert.pem
 RUN chmod +r /cacert.pem
 RUN chmod -w /cacert.pem
 
